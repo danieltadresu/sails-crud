@@ -9,8 +9,26 @@
  */
 
 module.exports.routes = {
-  'GET /get-all': { action: 'Usuario/getAll' },
-  'GET /get-user/:id': { action: 'Usuario/getUser' },
-  'POST /add-user': { action: 'Usuario/addUser' },
-  'DELETE /delete-user/:id': { action: 'Usuario/deleteUser' }
+  'GET /get-all': { 
+    action: 'Usuario/getAll' 
+  },
+  'GET /get-user/:id': { 
+    action: 'Usuario/getUser' 
+  },
+  'POST /add-user': { 
+    action: 'Usuario/addUser' 
+  },
+  'DELETE /delete-user/:id': { 
+    action: 'Usuario/deleteUser' 
+  },
+
+  'POST /add-telefono': {
+    action: 'Telefono/addTelefono' 
+  },
+  'GET /get-all-telefonos': {
+    action: 'Telefono/getAll' 
+  },
+  'DELETE /delete-telefono/:id': {
+    action: 'Telefono/deleteTelefono'
+  }
 };
